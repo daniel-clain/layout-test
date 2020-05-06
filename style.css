@@ -1,0 +1,246 @@
+body{
+  margin: 0;
+  min-width: 320px;
+  font-size: 16px;
+  font-family: sans-serif;
+  margin: auto;
+}
+
+
+header{
+  height: 100px;
+  display: block;
+  color: white;
+  position: relative;
+}
+
+.free-shipping{
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 2px solid #272823;
+  font-size: .6rem;
+}
+
+.top-container{
+  display: flex;
+  justify-content: space-between;
+  padding:20px;
+  align-items: center;
+}
+.menu-container{
+  flex:1;
+}
+.desktop-menu{
+  display: none
+}
+.logo{
+  width: 170px;
+}
+
+.menu-mobile>i{
+  width: 30px;
+  height: 30px;
+}
+.user-tools{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.user-tools>.shopping-cart{
+  width: 30px;
+  height: 30px;
+}
+.user-tools>.currency{
+  display:none;
+}
+.user-tools>.search{
+  display:none;
+}
+.user-tools>.account{
+  display:none;
+}
+
+
+
+main{
+  margin-top: -100px;
+}
+
+.skincare-science{
+  color:white;
+  height: 500px;
+  background-color: #10120d;
+  padding: 100px 20px 0;
+  text-align: center;
+  box-sizing: border-box;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.skincare-science>.container>.small-text{
+  font-size:.8rem;
+}
+.skincare-science>.container>.big-text{
+  font-size: 1.6rem;
+  width: 250px;
+  margin: auto;
+  padding: 40px 0;
+  line-height: 2.4rem;
+}
+
+.donated{
+  background-color: #ebe8e1;
+  box-sizing: border-box;
+  padding: 30px 20px 0;
+  text-align: center;
+  color: #362e2b;
+}
+
+.donated>.container{
+  max-width: 440px;
+  margin: auto;
+  padding-bottom: 160px;
+}
+
+.donated>.container>.amount{
+  color: #0e775d;
+  font-size: 2.4rem;
+}
+.donated>.container>.title{
+  font-size: 1.2rem;
+  padding: 10px;
+}
+.donated>.container>a:link,
+.donated>.container>a:hover,
+.donated>.container>a:visited{
+  color: #362e2b;
+}
+
+
+
+.categories{
+  width: 280px;
+  margin: -120px auto 0;
+  text-align: center;
+  color: white;
+
+}
+.categories>.block{
+  height: 150px;
+  margin-bottom: 2px;
+  box-sizing: border-box;
+  padding: 40px 0;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.categories>.block>.shop-text{
+  display: none;
+}
+.cleanse{
+  background-color: #3c8310;
+}
+.moisturise{
+  background-color: #3f4b41;
+}
+.repair{
+  background-color: #a46e4a;
+}
+.categories>.block>.title{
+  font-size: 2rem;
+}
+.categories>.block>button{
+  display: none;
+}
+.categories>.block>a:link,
+.categories>.block>a:hover,
+.categories>.block>a:visited{
+  color: white;
+}
+
+.best-sellers{
+  height: 530px;
+}
+
+
+@media (min-width: 480px){
+  .desktop-menu{
+    display: block;
+    font-size: .6rem;
+    flex: 1;
+  }
+  .menu-mobile{
+    display: none;
+  }
+  .desktop-menu>ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+  }
+  .desktop-menu>ul>li {
+    display: inline-block;
+    margin-right: 40px;
+  }
+  .logo{
+    width: 310px;
+  }
+  
+  
+  .user-tools>.currency{
+    display:inline-block;
+  }
+  .user-tools>.search{
+    display:inline-block;
+  }
+  .user-tools>.account{
+    display:inline-block;
+  }
+
+  .skincare-science{
+    height: 1150px;
+  }
+  .skincare-science>.container>.big-text{
+    width: 780px;
+    font-size: 2.6rem;
+    line-height: 4.4rem;
+  }
+  
+  .donated>.container{
+    padding-top: 110px;
+    padding-bottom: 200px;
+  }
+
+  .categories{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    margin: -100px auto 0;
+
+  }
+  .categories>.block{
+    width: 535px;
+    height: 630px;
+    align-items: flex-start;
+    padding: 60px 0 0 50px;
+    justify-content: flex-start;
+  }
+  
+  .categories>.block>.shop-text{
+    display: block;
+  }
+  .categories>.block>.title{
+    padding: 25px 0 50px;
+    font-size: 2.5rem;
+  }
+  .categories>.block>a{
+    display: none;
+  }
+  .categories>.block>button{
+    display: inline-block;
+  }
+  .moisturise{
+    margin-top: 100px;
+  }
+}
